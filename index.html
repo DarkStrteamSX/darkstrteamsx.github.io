@@ -1,44 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DarK_SX</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DarK_SX</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- AdSense Head Slot (Paste your script below if approved) -->
+  <!-- Example:
+  <script data-ad-client="ca-pub-xxxxxxxx" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  -->
+  
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #00e5ff;
+      text-shadow: 0 0 10px #00e5ff;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #00e5ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #searchInput {
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 12px 20px;
+      display: block;
+      border-radius: 30px;
+      border: none;
+      font-size: 16px;
+      background-color: #222;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1f1f1f;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card p a {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 8px 16px;
+      background-color: #00e5ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      color: #888;
+    }
+
+    /* Ad Container Style */
+    .ad-slot {
+      margin: 20px auto;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>DarK_SX</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy.html">Privacy</a>
-        </nav>
-    </header>
 
-    <div class="container">
-        <div class="card">
-            <a href="https://1024terabox.com/s/1j6Pg_jwq-OLtfkHE1w21mw" target="_blank">
-                <img src="assets/posters/video1.jpg" alt="Video 1">
-            </a>
-            <p><a href="https://1024terabox.com/s/1j6Pg_jwq-OLtfkHE1w21mw" target="_blank">Watch Now</a></p>
-        </div>
-        <div class="card">
-            <a href="https://1024terabox.com/s/1DiKvnlVoYUk7Qrr1DM9uMQ" target="_blank">
-                <img src="assets/posters/video2.jpg" alt="Video 2">
-            </a>
-            <p><a href="https://1024terabox.com/s/1DiKvnlVoYUk7Qrr1DM9uMQ" target="_blank">Watch Now</a></p>
-        </div>
-        <div class="card">
-            <a href="https://1024terabox.com/s/1DiKvnlVoYUk7Qrr1DM9uMQ" target="_blank">
-                <img src="assets/posters/video2.jpg" alt="Video 3">
-            </a>
-            <p><a href="https://1024terabox.com/s/1DiKvnlVoYUk7Qrr1DM9uMQ" target="_blank">Watch Now</a></p>
-        </div>
+  <header>
+    <h1>DarK_SX</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <!-- 🔥 AdSense In-Content Top Ad Slot -->
+  <div class="ad-slot">
+    <!-- Paste your AdSense code here when approved -->
+    <!-- Example:
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-xxxxxxxx"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+
+  <input type="text" id="searchInput" placeholder="Search for anime..." onkeyup="searchVideos()">
+
+  <div class="container" id="videoList">
+    <div class="card" data-title="Naruto">
+      <a href="https://1024terabox.com/s/1j6Pg_jwq-OLtfkHE1w21mw" target="_blank">
+        <img src="assets/posters/naruto.jpg" alt="Naruto" />
+      </a>
+      <p><a href="https://1024terabox.com/s/1j6Pg_jwq-OLtfkHE1w21mw" target="_blank">Watch Naruto</a></p>
     </div>
 
-    <footer>&copy; 2025 Dark_SX</footer>
+    <div class="card" data-title="One Piece">
+      <a href="https://1024terabox.com/s/1DiKvnlVoYUk7Qrr1DM9uMQ" target="_blank">
+        <img src="assets/posters/onepiece.jpg" alt="One Piece" />
+      </a>
+      <p><a href="https://1024terabox.com/s/1DiKvnlVoYUk7Qrr1DM9uMQ" target="_blank">Watch One Piece</a></p>
+    </div>
+  </div>
+
+  <!-- 🔥 AdSense In-Content Bottom Ad Slot -->
+  <div class="ad-slot">
+    <!-- Paste your AdSense code here -->
+  </div>
+
+  <footer>&copy; 2025 DarK_SX. All rights reserved.</footer>
+
+  <script>
+    function searchVideos() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const title = card.getAttribute("data-title").toLowerCase();
+        card.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
 </body>
 </html>
